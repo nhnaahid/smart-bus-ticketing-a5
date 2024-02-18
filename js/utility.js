@@ -1,7 +1,3 @@
-function setBgColorById(elementId) {
-    const element = document.getElementById(elementId);
-    element.style.backgroundColor = 'rgb(34 197 94)';
-}
 function getElementValueIntById(elementId) {
     const element = document.getElementById(elementId);
     const elementValueInt = parseInt(element.innerText);
@@ -22,6 +18,5 @@ function removeAttributeById(elementId, attributeName) {
 }
 function hideSection(elementId){
     const element = document.getElementById(elementId).parentNode;
-    // console.log(element.classList);
     element.classList.add('hidden');
 }

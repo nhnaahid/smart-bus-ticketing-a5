@@ -23,6 +23,7 @@ function updateTask(event) {
     }
     const seat = event.target;
     seat.style.backgroundColor = 'rgb(34 197 94)';
+    seat.classList.add('text-white');
     count--;
     selectedSeat++;
     setElementValueById('seat-left', count);
@@ -45,10 +46,10 @@ function updateTask(event) {
     newTotalPrice = currentTotalPrice + 550;
     setElementValueById('total-price', newTotalPrice);
 
-     // Update grand Price
-     const newGrandPrice = newTotalPrice - discountAmount;
-     setElementValueById('grand-price', newGrandPrice);
-     
+    // Update grand Price
+    const newGrandPrice = newTotalPrice - discountAmount;
+    setElementValueById('grand-price', newGrandPrice);
+
     // Enable button and input field
     if (selectedSeat == 4) {
         removeAttributeById('apply-btn', 'disabled');
@@ -81,4 +82,11 @@ function applyCoupon(elementId) {
         alert('Invalid Coupon Code!');
     }
     element.value = '';
+}
+function phoneNumber(event) {
+    if (selectedSeat >= 1)
+        removeAttributeById('next-btn', 'disabled');
+}
+function refreshPage() {
+    location.reload();
 }
