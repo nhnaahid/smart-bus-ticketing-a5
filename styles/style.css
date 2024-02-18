@@ -16,3 +16,13 @@
     box-sizing: border-box;
     max-width: 1440px;
 } */
+.seats p{
+    background-color: rgb(243 244 246);
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.seats h1{
+    text-align: center;
+}
