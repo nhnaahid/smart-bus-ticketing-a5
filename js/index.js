@@ -18,7 +18,7 @@ for (const seat of seats) {
 
 function updateTask(event) {
     if (selectedSeat === 4) {
-        alert('At most four seat can be selected')
+        alert('At most four seats can be selected.')
         return;
     }
     const seat = event.target;
